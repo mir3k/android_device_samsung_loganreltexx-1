@@ -1,5 +1,5 @@
-export DEVICE=serrano-common
-OUTDIR=vendor/$VENDOR/$DEVICE
+export DEVICE=loganreltexx
+OUTDIR=vendor/samsung/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
 (cat << EOF) > $MAKEFILE
@@ -54,7 +54,7 @@ done
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += libtime_genoff
 
-\$(call inherit-product, vendor/$VENDOR/$DEVICE/$DEVICE-vendor-blobs.mk)
+\$(call inherit-product, vendor/samsung/$DEVICE/$DEVICE-vendor-blobs.mk)
 EOF
 
 (cat << EOF) > ../../../$OUTDIR/BoardConfigVendor.mk
@@ -96,7 +96,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter serrano3gxx serranodsdd serranodsub serranoltebmc serranoltespr serranoltexx,\$(TARGET_DEVICE)),)
+ifneq (\$(filter serrano3gxx loganreltexx serranodsdd serranodsub serranoltebmc serranoltespr serranoltexx,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff

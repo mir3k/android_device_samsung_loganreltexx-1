@@ -3,7 +3,7 @@
 set -e
 
 export VENDOR=samsung
-export DEVICE=serrano-common
+export DEVICE=loganreltexx
 
 if [ $# -eq 0 ]; then
   SRC=adb

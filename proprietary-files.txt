@@ -62,21 +62,14 @@ lib/libril-qc-qmi-1.so
 lib/libril.so
 lib/libsecril-client.so
 lib/libtime_genoff.so
-lib/libidl.so
-lib/libqcci_legacy.so
-lib/libqmi.so
-lib/libqmi_cci.so
-lib/libqmi_client_qmux.so
-lib/libqmi_common_so.so
-lib/libqmi_csi.so
-lib/libqmi_encdec.so
-lib/libqmiservices.so
+lib/libdl.so
+lib/libqcci_adc.so
+
 
 # GPS
 lib/libloc_api_v02.so
 
 # Sensors
-bin/geomagneticd
 lib/hw/sensors.msm8960.so
 
 # Camera
@@ -141,8 +134,9 @@ lib/libWVStreamControlAPI_L3.so
 lib/libwvm.so
 
 # NFC firmware
-vendor/firmware/bcm2079xB4_firmware.ncd
-vendor/firmware/bcm2079xB4_pre_firmware.ncd
+vendor/firmware/libpn547_fw.so
+vendor/firmware/libpn547_fw_pku.so
+vendor/firmware/libpn547_fw_platform.so
 
 # Offmode charging
 bin/lpmkey
