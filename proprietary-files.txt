@@ -11,6 +11,7 @@ bin/thermald
 lib/libacdbloader.so
 lib/libaudcal.so
 
+
 # mmparser extended
 lib/libDivxDrm.so
 lib/libExtendedExtractor.so
@@ -85,6 +86,7 @@ lib/libgeofence.so
 
 # Sensors
 lib/hw/sensors.msm8960.so
+lib/libacdapi_azi.so
 
 # Camera
 bin/mm-qcamera-daemon
@@ -181,3 +183,20 @@ media/battery_charging_95.qmg
 media/battery_charging_100.qmg
 media/battery_error.qmg
 media/chargingwarning.qmg
+
+#Unknown
+lib/libaudioalsa.so
+lib/libarac.so
+lib/libarccamera.so
+lib/libarcplatform.so
+lib/libarcsoft_panorama_burstcapture.so
+lib/libarcsoft_sensorndk.so
+lib/libc2d2_z180.so
+lib/libfmradio_jni.so
+lib/libfrsdk.so
+lib/libmedia_native.so
+lib/libnfc_log.so
+lib/libthermalclient.so
+lib/libTimeService.so
+lib/hw/gps.default.so
+
