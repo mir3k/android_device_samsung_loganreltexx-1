@@ -1,4 +1,6 @@
 export DEVICE=loganreltexx
+export VENDOR=samsung
+
 OUTDIR=vendor/samsung/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
@@ -96,7 +98,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter serrano3gxx loganreltexx serranodsdd serranodsub serranoltebmc serranoltespr serranoltexx,\$(TARGET_DEVICE)),)
+ifneq (\$(filter loganreltexx ,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
